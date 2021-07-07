@@ -59,12 +59,12 @@
 - Для начала установить java 8+
 - Дальше Переходим по ссылке https://jmeter.apache.org/download_jmeter.cgi
 
-![screenshot of sample](/jmeter/images/2.jpg)
+![screenshot of sample](jmeter/images/2.jpg)
 
 - Скачиваем и делаем распаковку jmeter
 - Запускаем meter.bat с папки /bin
 
-![screenshot of sample](/jmeter/images/3.jpg)
+![screenshot of sample](jmeter/images/3.jpg)
 
 ![screenshot of sample](/jmeter/images/4.jpg)
 
