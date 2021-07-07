@@ -59,31 +59,31 @@
 - Для начала установить java 8+
 - Дальше Переходим по ссылке https://jmeter.apache.org/download_jmeter.cgi
 
-![screenshot of sample](/jmeter/images/2.png)
+![screenshot of sample](/jmeter/images/2.jpg)
 
 - Скачиваем и делаем распаковку jmeter
 - Запускаем meter.bat с папки /bin
 
-![screenshot of sample](/jmeter/images/3.png)
+![screenshot of sample](/jmeter/images/3.jpg)
 
-![screenshot of sample](/jmeter/images/4.png)
+![screenshot of sample](/jmeter/images/4.jpg)
 
 
 
 ## Важные элементы jmeter
 1) `Thread group` - представляет собой набор потоков, каждый поток представляет одного пользователя, использующего тестируемое приложение, в основном каждый поток имитирует один реальный запрос пользователя к серверу
 
-![screenshot of sample](/jmeter/images/5.png)
+![screenshot of sample](/jmeter/images/5.jpg)
 
-![screenshot of sample](/jmeter/images/6.png)
+![screenshot of sample](/jmeter/images/6.jpg)
 
 2) `Samplers` - добавляются как дочерние элементы групп потоков. Они используются для отправки на сервер различных типов запросов. После того, как запрос сэмплера обрабатывается сервером, его ответ возвращается в JMeter, и его можно просматривать и анализировать с точки зрения различных параметров производительности, таких как время отклика, количество обращений в секунду, пропускная способность 
 
-![screenshot of sample](/jmeter/images/7.png)
+![screenshot of sample](/jmeter/images/7.jpg)
 
 3) `Listeners` - слушатели показывают результат выполнения теста, они могут отображать результаты в другом формате, например, в виде графика или файла журнала.
 
-![screenshot of sample](/jmeter/images/8.png)
+![screenshot of sample](/jmeter/images/8.jpg)
 
 
 4) `Configuration` - элементы, которые устанавливают значения по умолчанию и переменные для последующего использования сэмплерами
@@ -91,9 +91,9 @@
 
 5) `Assertions`- используется для проверки ответа на запрос, который вы отправили на сервер. Assertions - это процесс, в котором вы проверяете ожидаемый результат с фактическим результатом запроса во время выполнения.
 
-![screenshot of sample](/jmeter/images/9.png)
+![screenshot of sample](/jmeter/images/9.jpg)
 
-![screenshot of sample](/jmeter/images/10.png)
+![screenshot of sample](/jmeter/images/10.jpg)
 
 ## На примере
 
@@ -102,20 +102,20 @@
 - Перед работой важно включить прокси сервер
 - В поле Адрес вбиваете свой ip,порт по дефолту в jmeter стоит 8888
 
- ![screenshot of sample](/jmeter/images/11.png)
+ ![screenshot of sample](/jmeter/images/11.jpg)
 
 - Добавьте Thread Group
 - Выберите план тестирования в дереве
 -Щелкните правой кнопкой мыши «Test Plan» и добавьте новую группу потоков: Add -> Threads (Users) -> Thread Group
 
- ![screenshot of sample](/jmeter/images/12.png)
+ ![screenshot of sample](/jmeter/images/12.jpg)
  
  
 На панели управления thread group:
 Название группы
 
- ![screenshot of sample](/jmeter/images/13.png)
-  ![screenshot of sample](/jmeter/images/14.png)
+ ![screenshot of sample](/jmeter/images/13.jpg)
+  ![screenshot of sample](/jmeter/images/14.jpg)
   
 - `Number of Threads`: 100 (Количество пользователей, подключающихся к сайту: 100)
 - `Ramp-Up Period`: 100 (Ramp-Up Period сообщает JMeter, сколько времени нужно отложить до запуска следующего пользователя. Например, если у нас 100 пользователей и 100-секундный Ramp-Up Period, то задержка между стартовыми пользователями будет 1 секунда (100 секунд / 100 пользователей).
@@ -128,20 +128,20 @@
 ## Добавление элементов JMeter
 - **HTTP request Default** 
 Этот элемент можно добавить, щелкнув правой кнопкой мыши thread group и выбрав: **Add** -> **Config Element** -> **HTTP Request Defaults**.
-  ![screenshot of sample](/jmeter/images/15.png)
+  ![screenshot of sample](/jmeter/images/15.jpg)
   
   **HTTP Request Defaults** - это очень простой и ключевой элемент JMeter. Этот элемент конфигурации используется, когда все запросы в сценарии JMeter отправляются на один и тот же сервер. Вы можете добавить один элемент HTTP-запроса по умолчанию в План тестирования с правильным именем или IP-адресом сервера в поле «Имя или IP-адрес сервера».
  
 В панели управления HTTP-запроса по умолчанию введите имя тестируемого веб-сайта.В поле server name or IP указать адрес сайта.
-  ![screenshot of sample](/jmeter/images/16.png)
+  ![screenshot of sample](/jmeter/images/16.jpg)
   
 
 -  **HTTP Request**
 Этот элемент можно добавить, щелкнув правой кнопкой мыши Thread Group и выбрать : **Add** -> **Sampler** -> **HTTP Request**.
-  ![screenshot of sample](/jmeter/images/17.png)
+  ![screenshot of sample](/jmeter/images/17.jpg)
 В панели управления HTTP-запросами поле «Path» указываете, какой URL-запрос вы хотите отправить на сервер сайта.
 
-  ![screenshot of sample](/jmeter/images/18.png)
+  ![screenshot of sample](/jmeter/images/18.jpg)
   
   Например, если вы введете «backend-outsourcing» в поле «Path». JMeter создаст URL-запрос https://crtweb.ru/backend-outsourcingr к серверу crtweb.ru.
 
@@ -152,7 +152,7 @@
 JMeter может отображать результат теста в формате графика.
 Щелкните правой кнопкой мыши **Test Plan**, **Add** -> **Listener** -> **Graph Results**.
 
- ![screenshot of sample](/jmeter/images/19.png)
+ ![screenshot of sample](/jmeter/images/19.jpg)
  
  
  
@@ -163,7 +163,7 @@ JMeter может отображать результат теста в форм
 Щелкните правой кнопкой мыши **Test Plan**, **Add** -> **Listener** -> **View Result Tree**.
 **View result tree** - это, инструмент для отладки отправленных запросов и полученных ответов.
 
- ![screenshot of sample](/jmeter/images/20.png)
+ ![screenshot of sample](/jmeter/images/20.jpg)
  
 #### Шаг - 5
 ## Запустить тест и получить результат теста
@@ -171,9 +171,9 @@ JMeter может отображать результат теста в форм
 
 На рисунке ниже представлен график плана тестирования, в котором мы смоделировали 100 пользователей, которые заходили на сайт www.benefaka.kz
 Ниже указаны весь список запросов,всех юзеров,каждый запрос можно детальнее изучить.
- ![screenshot of sample](/jmeter/images/21.png)
+ ![screenshot of sample](/jmeter/images/21.jpg)
  
- ![screenshot of sample](/jmeter/images/22.png)
+ ![screenshot of sample](/jmeter/images/22.jpg)
 
 
 
