@@ -128,17 +128,21 @@
 ## Добавление элементов JMeter
 - **HTTP request Default** 
 Этот элемент можно добавить, щелкнув правой кнопкой мыши thread group и выбрав: **Add** -> **Config Element** -> **HTTP Request Defaults**.
+  
   ![screenshot of sample](/jmeter/images/15.jpg)
   
   **HTTP Request Defaults** - это очень простой и ключевой элемент JMeter. Этот элемент конфигурации используется, когда все запросы в сценарии JMeter отправляются на один и тот же сервер. Вы можете добавить один элемент HTTP-запроса по умолчанию в План тестирования с правильным именем или IP-адресом сервера в поле «Имя или IP-адрес сервера».
  
 В панели управления HTTP-запроса по умолчанию введите имя тестируемого веб-сайта.В поле server name or IP указать адрес сайта.
-  ![screenshot of sample](/jmeter/images/16.jpg)
+ 
+ ![screenshot of sample](/jmeter/images/16.jpg)
   
 
 -  **HTTP Request**
 Этот элемент можно добавить, щелкнув правой кнопкой мыши Thread Group и выбрать : **Add** -> **Sampler** -> **HTTP Request**.
-  ![screenshot of sample](/jmeter/images/17.jpg)
+
+![screenshot of sample](/jmeter/images/17.jpg)
+
 В панели управления HTTP-запросами поле «Path» указываете, какой URL-запрос вы хотите отправить на сервер сайта.
 
   ![screenshot of sample](/jmeter/images/18.jpg)
